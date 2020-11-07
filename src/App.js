@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
-import {  Nav,Navbar, Jumbotron,Carousel, Container } from 'react-bootstrap';
+import {  Nav,Navbar,Button,Jumbotron,Carousel, Container } from 'react-bootstrap';
 require('bootstrap');
 
 
@@ -9,9 +9,9 @@ function App() {
   return (
     <BrowserRouter>
       <Container fluid>
-      <Navbar bg="dark" variant="dark">
-        <Nav className="justify-content-end"
-  activeKey="/home">
+      <Navbar  className="justify-content-end" bg="dark" variant="dark">
+      <Navbar.Brand className="d-inline-block align-top" href="#home">BEWOCA</Navbar.Brand>
+        <Nav activeKey="/home">
   <Nav.Item>
     <Nav.Link href="/home">Home</Nav.Link>
   </Nav.Item>
@@ -29,7 +29,7 @@ function App() {
 <Carousel bg="dark">
   <Carousel.Item>
   <Carousel.Caption>
-
+ 
       <h1 className="text-center mt-4 mb-4">Better World Community and Advocacy Organization</h1>
     
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -63,6 +63,16 @@ function App() {
     />
   </Carousel.Item>
 </Carousel>
+<Jumbotron fluid>
+  <h1>Hello, world!</h1>
+  <p>
+    This is a simple hero unit, a simple jumbotron-style component for calling
+    extra attention to featured content or information.
+  </p>
+  <p>
+    <Button variant="secondary">Learn more</Button>
+  </p>
+</Jumbotron>
 
       </Container>
     </BrowserRouter>
