@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 
 const Icons = () => {
     return (
-        <div>
-        <h3 className="text-info">Follow Us</h3>
+        <div className="d-flex justify-content-between flex-row">
+        <h3 className="tex text-info">Follow Us</h3>
         <div className="icons flex-column-sm "> <Link to="#">
             <i className="fa fa-globe fa-2x" aria-hidden="true"></i>
         </Link>

@@ -1,17 +1,16 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom'
 import {  Nav,Button,Jumbotron,Carousel, Card, Container } from 'react-bootstrap';
 
 
 
 
 
-const Home = () => {
+const Rights = () => {
     return ( 
         <div>
  <Jumbotron fluid className=" display-3 bg-dark sm-display-5">  
                 <Nav.Item>
-    <Nav.Link href="link-1"> <h1 className="head">HELP SOMEONE INTERNALLY DISPLACED BY THE WAR IN ENGLISH CAMEROON</h1></Nav.Link>
+    <Nav.Link href="link-1"> <h1 className="head">THANK YOU FOR YOUR KINDNESS</h1></Nav.Link>
   </Nav.Item>
             </Jumbotron>
            
@@ -20,32 +19,19 @@ const Home = () => {
 <Carousel className="d-block w-100">
   <Carousel.Item>
   <Carousel.Caption>
-      <h1 className=" title font-weight-normal">Welcome to Better World Community And Advocacy Organization</h1>
-    </Carousel.Caption>
-    <img
-      className="d-block w-100"
-      src="/images/d1.jpg"
-      alt="First slide"
-    />
-  </Carousel.Item>
-  <Carousel.Item>
-  <Carousel.Caption>
-   <h1 className="title font-weight-normal text-dark ">A little Makes a difference</h1>
     </Carousel.Caption>
     <img 
       className="d-block w-100"
-      src="/images/d2.jpg"
+      src="/images/e7.jpg"
       alt="Third slide"
     />
   </Carousel.Item>
  <Carousel.Item>
-  <Carousel.Caption>
-     <h3 className="title text-center font-weight-bold text-dark lg display-5"> Take action Now!! Volunteer or donate</h3>
-     
+  <Carousel.Caption> 
     </Carousel.Caption>
     <img
       className="d-block w-100"
-      src="/images/d3.jpg"
+      src="/images/aa.jpg"
       alt="Third slide"
     />
   </Carousel.Item>
@@ -114,10 +100,10 @@ const Home = () => {
   <Card.Body>
     <Card.Title><h3 className="font-weight-bold text-info">Empower a woman, save a family</h3></Card.Title>
     <Card.Text>
-     Sponsor an Internally displaced person to learn a trade or donate to our project aimed at training women and girls on how to make sandals and bags using beads.
+     Sponsor an Internally displaced person to learn a trade or Rights to our project aimed at training women and girls on how to make sandals and bags using beads.
     </Card.Text>
     <Button className="font-weight-bold bg-dark"> <Nav.Item>
-                    <Nav.Link href="/donate">Take Action</Nav.Link>
+                    <Nav.Link href="/skills">Take Action</Nav.Link>
                   </Nav.Item>
                   </Button>
   </Card.Body>
@@ -150,4 +136,4 @@ const Home = () => {
      );
 }
  
-export default Home;
+export default Rights;

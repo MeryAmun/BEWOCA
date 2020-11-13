@@ -1,0 +1,104 @@
+
+
+.aside{
+  width: 25rem;
+  border: solid darkblue;
+}
+
+.main{
+  display: flex;
+  border: solid skyblue;
+  justify-content: space-between;
+}
+
+.section{
+  border: solid green;
+  width: 55rem;
+}
+
+.caro{
+  border: solid yellow;
+  width: 400px;
+}
+
+
+
+
+@media (max-width: 400px) { 
+ 
+ 
+/*nav links,logo */
+    .icons .fa{
+      padding: .4rem;
+    }
+    .search{
+      margin: .2rem 0;
+      width: 50%;
+    }
+   
+   .nav{
+     font-size: 0.8rem;
+     display: flex;
+     flex-direction: column;
+   }
+  
+   .logo{
+     width: 8rem;
+     height: 3rem;
+   }
+   
+
+    .title{
+      font-size: 1rem;
+    }
+    .para{
+      font-size: 1rem;
+      font-weight: normal;
+      padding: .5rem;
+      font-family:'Helvetica Neue', sans-serif ;
+    }
+
+    /*body*/
+    .aside{
+      width: 15rem;
+      border: solid darkblue;
+    }
+    .hov{
+      width: 50%;
+    }
+    
+    .main{
+      display: flex;
+      border: solid skyblue;
+      width: 18rem;
+      justify-content: center;
+    }
+    
+    .section{
+      border: solid green;
+      width: 15rem;
+    }
+    
+    .caro{
+      border: solid yellow;
+      width: 15rem;
+    }
+    
+    main{
+      display: flex;
+      flex-direction: column;
+    }
+   
+    .tex{
+      font-size: 1rem;
+    }
+  
+    .footer {
+      background-color: black;
+      opacity: 0.9;
+      text-align: center;
+      font-size: .5rem;
+      padding: .5rem 0;
+    } 
+    
+  }
