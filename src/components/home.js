@@ -6,6 +6,7 @@ import {  Nav,Button,Jumbotron,Carousel, Card, Container } from 'react-bootstrap
 
 
 
+
 const Home = () => {
     return ( 
         <div>
@@ -99,7 +100,6 @@ const Home = () => {
     </div>
   </div>
   
-   
 
   <aside className="float-right">
 <Card  className="card border border-white">
@@ -145,6 +145,7 @@ const Home = () => {
 </section>
 
 </main>
+
 </Container>
         </div>
      );

@@ -5,9 +5,7 @@ const Icons = () => {
     return (
         <div className="d-flex justify-content-between flex-row">
         <h3 className="tex text-info">Follow Us</h3>
-        <div className="icons flex-column-sm "> <Link to="#">
-            <i className="fa fa-globe fa-2x" aria-hidden="true"></i>
-        </Link>
+        <div className="icons flex-column-sm ">
         <Link to="https://web.facebook.com/Better-World-Community-And-Advocacy-Organisation-166805994242255">
         <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
         </Link>
