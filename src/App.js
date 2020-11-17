@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import { BrowserRouter,Route } from 'react-router-dom'
 import Loader from './components/loader'
 import Icons from './components/icons'
@@ -14,6 +14,7 @@ import Emergency from './components/emergency'
 import Education from './components/education'
 import Violence from './components/violence'
 import Nyeneba from './components/nyeneba'
+import MyForm from './components/form'
 
 require('bootstrap');
 
@@ -37,6 +38,7 @@ function App() {
 <Route path="/education" component={Education}/>
 <Route path="/violence" component={Violence}/>
 <Route path="/nyeneba" component={Nyeneba}/>
+<Route path="/form" component={MyForm}/>
 
 
 </div>

@@ -25,7 +25,7 @@ const Navigation = () => {
         </Link>
     </Navbar.Brand>
       </Navbar>
-        <Nav className="nav justify-content-start  font-weight-bold bg-dark">
+        <Nav className="nav justify-content-start  font-weight-bold bg-dark fixed">
        <span className="close text-white d-lg-none" aria-hidden="false">&times;</span>
   <Nav.Item className="item">
     <Nav.Link href="/">HOME</Nav.Link>

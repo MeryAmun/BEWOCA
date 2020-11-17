@@ -10,7 +10,7 @@ const Education = () => {
         <div>
  <Jumbotron fluid className=" display-3 bg-dark sm-display-5">  
                 <Nav.Item>
-    <Nav.Link href="link-1"> <h1 className="head">THANK YOU FOR YOUR KINDNESS</h1></Nav.Link>
+    <Nav.Link href="link-1"> <h1 className="head">YOUTH EDUCATION AND SKILLS BUILDING</h1></Nav.Link>
   </Nav.Item>
             </Jumbotron>
            
