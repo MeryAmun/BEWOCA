@@ -30,7 +30,6 @@ const Home = () => {
             </Carousel.Item>
             <Carousel.Item>
               <Carousel.Caption>
-                <h1 className="title font-weight-normal text-dark ">A little Makes a difference</h1>
               </Carousel.Caption>
               <img
                 className="d-block w-100"
@@ -40,8 +39,7 @@ const Home = () => {
             </Carousel.Item>
             <Carousel.Item>
               <Carousel.Caption>
-                <h3 className="title text-center font-weight-bold text-dark lg display-5"> Take action Now!! Volunteer or donate</h3>
-
+                
               </Carousel.Caption>
               <img
                 className="d-block w-100"
@@ -64,7 +62,7 @@ const Home = () => {
               <br />
               <div className="caro">
                 <Carousel>
-                  <Carousel.Item interval={2000}>
+                  <Carousel.Item interval={500}>
                     <img
                       className="d-block w-100"
                       src="/images/a6.jpg"
@@ -73,15 +71,15 @@ const Home = () => {
                     <Carousel.Caption>
                     </Carousel.Caption>
                   </Carousel.Item>
-                  <Carousel.Item interval={2000}>
+                  <Carousel.Item interval={500}>
                     <img
                       className="d-block w-100"
                       src="/images/a5.jpg"
                       alt="Third slide"
 
                     />
+                     <h3 className="title text-seconadry dispaly-3">First Batch of Trainees in the Sandals making craft</h3>
                     <Carousel.Caption>
-                      <h3 className="title text-seconadry dispaly-3">First Batch of Trainees in the Sandals making craft</h3>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -90,9 +88,8 @@ const Home = () => {
                       src="/images/a4.jpg"
                       alt="Third slide"
                     />
+                     <h3 className="title text-dark">Cross-section of Products.</h3>
                     <Carousel.Caption>
-                      <h3 className="title">Cross-section of Products.</h3>
-                      <p></p>
                     </Carousel.Caption>
                   </Carousel.Item>
                 </Carousel>
