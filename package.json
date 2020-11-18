@@ -17,7 +17,10 @@
     "resolve-url-loader": "^3.1.2",
     "web-vitals": "^0.2.4"
   },
+  "homepage": "https://meryamun.github.io/BEWOCA/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
