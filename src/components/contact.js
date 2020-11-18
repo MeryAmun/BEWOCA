@@ -36,8 +36,12 @@ const Contact = () => {
             <h3 className="title font-weight-bold text-info">OUR REGISTERED OFFICE</h3>
           <p>Our registered office is located at <h4 className="title font-weight-bold text-info">Red field Nghomham Bamenda Cameroon</h4></p>
           <p>You can also contact us on phone through the following numbers</p>
-          <h3 className="title font-weight-bold text-info">(+237) 674513391</h3>
-          <h3 className="title font-weight-bold text-info">(+237) 654292637</h3>
+          
+         
+
+          <h3 className="title font-weight-bold text-info"> <i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 674513391</h3>
+          <h3 className="title font-weight-bold text-info"><i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 654292637 </h3>
+          <h3 className="title font-weight-bold text-info"><i class="fa fa-envelope" aria-hidden="true"></i>bewocaa.org@gmail.com</h3>
           <p>For any other enquiries you can fill out our <Nav.Item>
                     <Nav.Link href="/form">Contact form</Nav.Link>
                   </Nav.Item></p>
@@ -80,7 +84,7 @@ const Contact = () => {
      Sponsor an Internally displaced person to learn a trade or donate to our project aimed at training women and girls on how to make sandals and bags using beads.
     </Card.Text>
     <Button className="title font-weight-bold bg-dark"> <Nav.Item>
-                    <Nav.Link href="/skills">Take Action</Nav.Link>
+                    <Nav.Link href="/donate">Take Action</Nav.Link>
                   </Nav.Item>
                   </Button>
   </Card.Body>
@@ -99,7 +103,7 @@ const Contact = () => {
     Women and children are the ones who bare the greatest brunts of war.A bloody civil war is raging in the Cameroons,the humanitarian crisis is overwhelming.Women and children have been targets in the recent weeks.
     </Card.Text>
     <Button className="title font-weight-bold bg-dark"> <Nav.Item>
-                    <Nav.Link href="/emergency">Take Action</Nav.Link>
+                    <Nav.Link href="/donate">Take Action</Nav.Link>
                   </Nav.Item>
                   </Button>
   </Card.Body>

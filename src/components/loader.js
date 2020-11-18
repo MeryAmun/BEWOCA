@@ -5,18 +5,18 @@ import $ from 'jquery';
 window.$ = window.jQuery = require('jquery')
 
 const Loader = () => {
-    $(document).ready(function(){
-        $(".close").click(function(){
+    $(document).ready(function () {
+        $(".close").click(function () {
             $(".nav").hide(500);
         })
-        $(".bar").click(function(){
+        $(".bar").click(function () {
             $(".nav").show(500);
         })
     })
-    return ( 
-    <div>
-    </div>
-     );
+    return (
+        <div>
+        </div>
+    );
 }
- 
+
 export default Loader;

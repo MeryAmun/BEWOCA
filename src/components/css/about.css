@@ -2,22 +2,22 @@
 
 .aside{
   width: 25rem;
-  border: solid darkblue;
+  
 }
 
 .main{
   display: flex;
-  border: solid skyblue;
+  
   justify-content: space-between;
 }
 
 .section{
-  border: solid green;
+
   width: 55rem;
 }
 
 .caro{
-  border: solid yellow;
+ 
   width: 400px;
 }
 
@@ -61,7 +61,7 @@
     /*body*/
     .aside{
       width: 15rem;
-      border: solid darkblue;
+      
     }
     .hov{
       width: 50%;
@@ -69,18 +69,18 @@
     
     .main{
       display: flex;
-      border: solid skyblue;
+     
       width: 18rem;
       justify-content: center;
     }
     
     .section{
-      border: solid green;
+     
       width: 15rem;
     }
     
     .caro{
-      border: solid yellow;
+     
       width: 15rem;
     }
     

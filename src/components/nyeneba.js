@@ -58,14 +58,14 @@ const Nyeneba = () => {
                         <h4 className="font-weight-bold text-info">Project Title</h4>
                         <h6>Improving the life and health of the people of Nyeneba through the creation of a clinic to provide drugs and adequate health facility.</h6>
                         <h4 className="font-weight-bold text-info">Project site</h4>
-                   <h6>Nyeneba Community South West Region of Cameroon.</h6>
+                        <h6>Nyeneba Community South West Region of Cameroon.</h6>
 
                         <h4 className="font-weight-bold text-info">Proponent</h4>
 
 .<h6 className="font-weight-bold text-dark">Think Big organization in Partnership with Better World Community And Advocacy Organization
 </h6>
-<h4 className="font-weight-bold text-info">Main objective</h4>
-<h6>The main objective of this project is to lower the infant mortality rate of the people of Nyeneba by providing access to adequate health care and drugs to the community of Nyeneba.</h6>
+                        <h4 className="font-weight-bold text-info">Main objective</h4>
+                        <h6>The main objective of this project is to lower the infant mortality rate of the people of Nyeneba by providing access to adequate health care and drugs to the community of Nyeneba.</h6>
 
                         <h4 className="font-weight-bold text-info">Project summary</h4>
                         <p>The on going crisis in the North West and South West Region of Cameroon has forced many victims to flee to neighboring counties, while others are fleeing to safer zones of moving to other communities.
@@ -130,7 +130,7 @@ Call $ WhatsApp: +237653377110 </p>
                                     Women and children are the ones who bare the greatest brunts of war.A bloody civil war is raging in the Cameroons,the humanitarian crisis is overwhelming.Women and children have been targets in the recent weeks.
     </Card.Text>
                                 <Button className="font-weight-bold bg-dark"> <Nav.Item>
-                                    <Nav.Link href="/emergency">Take Action</Nav.Link>
+                                    <Nav.Link href="/donate">Take Action</Nav.Link>
                                 </Nav.Item>
                                 </Button>
                             </Card.Body>

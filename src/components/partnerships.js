@@ -19,22 +19,35 @@ const Partnerships = () => {
           <Carousel className="d-block w-100">
             <Carousel.Item>
               <Carousel.Caption>
+              <h3 className="title text-seconadry dispaly-3"></h3>
               </Carousel.Caption>
               <img
                 className="d-block w-100"
-                src="/images/e7.jpg"
+                src="/images/c2.jpg"
                 alt="Third slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <Carousel.Caption>
+              <h3 className="title text-seconadry dispaly-3"></h3>
               </Carousel.Caption>
               <img
                 className="d-block w-100"
-                src="/images/aa.jpg"
+                src="/images/f3.jpg"
                 alt="Third slide"
               />
             </Carousel.Item>
+            <Carousel.Item>
+              <Carousel.Caption>
+              <h3 className="title text-seconadry dispaly-3"></h3>
+              </Carousel.Caption>
+              <img
+                className="d-block w-100"
+                src="/images/f1.jpg"
+                alt="Third slide"
+              />
+            </Carousel.Item>
+
           </Carousel>
         </Container>
 
@@ -73,11 +86,11 @@ The main objective of this project is to lower the infant mortality rate of the 
                   <Carousel.Item>
                     <img
                       className="d-block w-100 h-auto"
-                      src="/images/a4.jpg"
+                      src="/images/g2.jpg"
                       alt="Third slide"
                     />
                     <Carousel.Caption>
-                      <h3 className="title">Cross-section of Products.</h3>
+                      <h3 className="title">deplorable.</h3>
                       <p></p>
                     </Carousel.Caption>
                   </Carousel.Item>
@@ -103,7 +116,7 @@ The main objective of this project is to lower the infant mortality rate of the 
                     Sponsor an Internally displaced person to learn a trade or donate to our project aimed at training women and girls on how to make sandals and bags using beads.
     </Card.Text>
                   <Button className="font-weight-bold bg-dark"> <Nav.Item>
-                    <Nav.Link href="/skills">Take Action</Nav.Link>
+                    <Nav.Link href="/donate">Take Action</Nav.Link>
                   </Nav.Item>
                   </Button>
                 </Card.Body>
@@ -122,7 +135,7 @@ The main objective of this project is to lower the infant mortality rate of the 
                     Women and children are the ones who bare the greatest brunts of war.A bloody civil war is raging in the Cameroons,the humanitarian crisis is overwhelming.Women and children have been targets in the recent weeks.
     </Card.Text>
                   <Button className="font-weight-bold bg-dark"> <Nav.Item>
-                    <Nav.Link href="/emergency">Take Action</Nav.Link>
+                    <Nav.Link href="/donate">Take Action</Nav.Link>
                   </Nav.Item>
                   </Button>
                 </Card.Body>

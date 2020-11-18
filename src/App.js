@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import { BrowserRouter,Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Loader from './components/loader'
 import Icons from './components/icons'
 import About from './components/about';
@@ -24,47 +24,44 @@ require('bootstrap');
 function App() {
   return (
     <BrowserRouter>
-    <div>
-    <Navigation/>
-    <Loader/>
-<div className="content">
-<Route path='/' exact={true} component={Home} />
-<Route path="/about" component={About} />
-<Route path="/contact" component={Contact} />
-<Route path="/partnerships" component={Partnerships}/>
-<Route path="/donate" component={Donate}/>
-<Route path="/rights" component={Rights}/>
-<Route path="/emergency" component={Emergency}/>
-<Route path="/education" component={Education}/>
-<Route path="/violence" component={Violence}/>
-<Route path="/nyeneba" component={Nyeneba}/>
-<Route path="/form" component={MyForm}/>
+      <div>
+        <Navigation />
+        <Loader />
+        <div className="content">
+          <Route path='/' exact={true} component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/partnerships" component={Partnerships} />
+          <Route path="/donate" component={Donate} />
+          <Route path="/rights" component={Rights} />
+          <Route path="/emergency" component={Emergency} />
+          <Route path="/education" component={Education} />
+          <Route path="/violence" component={Violence} />
+          <Route path="/nyeneba" component={Nyeneba} />
+          <Route path="/form" component={MyForm} />
 
 
-</div>
+        </div>
 
-<div className="footer justify-content-around d-flex flex-row">
-<div justify-content-around d-flex flex-column>
-<Icons/>
-<div justify-content-around d-flex flex-column>
-<Nav.Link href="/contact">Contact Us</Nav.Link>
-       <Nav.Link href="/partnerships" >Thank You</Nav.Link>
-       <Nav.Link href="/partnerships" >Thank You</Nav.Link>
+        <div className="footer justify-content-around d-flex flex-row">
+          <div justify-content-around d-flex flex-column>
+            <Icons />
+
+
+            <h4 className="tex">BEWOCA &copy;2020</h4>
+          </div>
+          <div justify-content-around d-flex flex-column>
+            <Nav.Link href="/contact">Contact Us</Nav.Link>
+            <Nav.Link href="/partnerships">Partnerships</Nav.Link>
+            <Nav.Link href="/donate">Donations</Nav.Link>
+            <Nav.Link href="/skills">Empower</Nav.Link>
+            <Nav.Link href="/staff">Team</Nav.Link>
+            <Nav.Link href="/rights">Violence</Nav.Link></div>
+
+
+        </div>
       </div>
-       
-       <h4 className="tex">BEWOCA &copy;2020</h4>
-       </div>
-      <div justify-content-around d-flex flex-column>
-       <Nav.Link href="/partnerships" >Thank You</Nav.Link>
-       <Nav.Link href="/donate">Donations</Nav.Link>
-       <Nav.Link href="/skills">Empower</Nav.Link>
-       <Nav.Link href="/staff">Team</Nav.Link>
-       <Nav.Link href="/rights">Violence</Nav.Link></div>
-       
-                
-                </div>
-    </div>
-    
+
     </BrowserRouter>
   );
 }

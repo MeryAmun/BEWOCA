@@ -133,6 +133,22 @@ transition: transform 2s linear;
     font-size: 1rem;
  }
 
+ /*Donate page*/
+ .donate{
+  display: flex;
+  flex-direction: column;
+}
+/*Donate page end*/
+
+
+
+ /*Emmergency page*/
+ .emergency{
+   display: flex;
+   flex-direction: column;
+ }
+ /*emergency page end*/
+
   /*contact page*/
   .icon2{
     font-size: .4rem;
