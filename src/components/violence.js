@@ -1,5 +1,10 @@
 import React from 'react';
 import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
+import Image1 from "../images/aa.jpg"
+import Image2 from "../images/a2.jpg"
+import Image3 from "../images/a1.jpg"
+
+
 
 
 
@@ -10,32 +15,23 @@ const Violence = () => {
     <div>
       <Jumbotron fluid className=" display-3 bg-dark sm-display-5">
         <Nav.Item>
-          <Nav.Link href="link-1"> <h1 className="head">THERE IS NO JUSTIFICATION TO RAPE, SAY NO TO DOMESTIC VIOLENCE</h1></Nav.Link>
+          <Nav.Link href="/contact"> <h1 className="head text-center">THERE IS NO JUSTIFICATION TO RAPE, <br/>SAY NO TO DOMESTIC VIOLENCE</h1></Nav.Link>
         </Nav.Item>
       </Jumbotron>
-
+      <Carousel className="d-block w-100">
+      <Carousel.Item>
+        <Carousel.Caption>
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image1}
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
       <Container className="fluid display-5-sm">
         <Container className="fluid d-flex">
-          <Carousel className="d-block w-100">
-            <Carousel.Item>
-              <Carousel.Caption>
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/e7.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Carousel.Caption>
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/aa.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
+          
         </Container>
 
         <main className="">
@@ -51,11 +47,11 @@ const Violence = () => {
 
 
             <aside className="float-right">
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary">
                 <div className="hov d-flex flex-wrap">
                   <img
                     className="d-block w-100"
-                    src="/images/a2.jpg"
+                    src={Image2}
                     alt="Third slide"
 
                   />
@@ -71,10 +67,10 @@ const Violence = () => {
                   </Button>
                 </Card.Body>
               </Card>
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary">
                 <img
                   className="hov d-block w-100"
-                  src="/images/a1.jpg"
+                  src={Image3}
                   alt="Third slide"
 
                 />

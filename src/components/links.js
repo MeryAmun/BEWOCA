@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Nav, Navbar, NavDropdown, Form, FormControl } from 'react-bootstrap';
+import Image from "../images/d7.jpg"
+
 
 
 const Navigation = () => {
@@ -10,12 +12,12 @@ const Navigation = () => {
         <Navbar.Brand className="" href="/">
           <img
             className="logo d-block w-20"
-            src="/images/d7.jpg"
+            src={Image}
             alt="First slide"
           />
         </Navbar.Brand>
         <Navbar.Brand className="text-info">
-          <Link className="bg-transparent d-lg-none">
+          <Link to="#" className="bg-transparent d-lg-none">
             <i className="bar fa fa-bars" aria-hidden="true"></i>
           </Link>
         </Navbar.Brand>
@@ -47,6 +49,9 @@ const Navigation = () => {
         </Nav.Item>
         <Nav.Item className="">
           <Nav.Link href="/contact">CONTACT US</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="item">
+          <Nav.Link href="/bloglist">BLOG</Nav.Link>
         </Nav.Item>
         <Nav.Item className="">
           <Form inline className="search w-100">

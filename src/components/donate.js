@@ -1,5 +1,10 @@
 import React from 'react';
-import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
+import { Nav, Button, Jumbotron,Card, Container } from 'react-bootstrap';
+import Image3 from "../images/c1.jpg"
+import Image4 from "../images/b2.jpg"
+import Image5 from "../images/a2.jpg"
+import Image6 from "../images/a1.jpg"
+import Image7 from "../images/g2.jpg"
 
 
 
@@ -10,7 +15,7 @@ const Donate = () => {
     <div>
       <Jumbotron fluid className=" display-3 bg-dark sm-display-5">
         <Nav.Item>
-          <Nav.Link href="link-1"> <h1 className="head">THANK YOU FOR YOUR KINDNESS</h1></Nav.Link>
+          <Nav.Link href="link-1"> <h1 className="head text-center">THANK YOU FOR YOUR KINDNESS</h1></Nav.Link>
         </Nav.Item>
       </Jumbotron>
 
@@ -21,7 +26,8 @@ const Donate = () => {
             <div className="d-flex flex-wrap">
               <img
                 className="d-block w-100"
-                src="/images/c1.jpg"
+                src={Image3}
+                height="1000rem"
                 alt="Third slide"
 
               />
@@ -36,7 +42,8 @@ const Donate = () => {
           <Card className="card border border-white">
             <img
               className="d-block w-100"
-              src="/images/b2.jpg"
+              src={Image4}
+              height="500rem"
               alt="Third slide"
 
             />
@@ -49,10 +56,27 @@ const Donate = () => {
             </Card.Body>
           </Card>
           <Card className="card border border-white">
+            <img
+              className="d-block w-100"
+              src={Image7}
+              height="800rem"
+              alt="Third slide"
+
+            />
+
+            <Card.Body>
+              <Card.Title><h3 className="font-weight-bold text-info">Emergency</h3></Card.Title>
+              <Card.Text>
+                You can donnat drugs which could be given to internally displaced persons i the bushes for first aid treatment.
+    </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="card border border-white">
             <div className="d-flex flex-wrap">
               <img
                 className="d-block w-100"
-                src="/images/a2.jpg"
+                src={Image5}
+                height="500rem"
                 alt="Third slide"
 
               />
@@ -68,7 +92,7 @@ const Donate = () => {
           <Card className="card border border-white">
             <img
               className="d-block w-100"
-              src="/images/a1.jpg"
+              src={Image6}
               alt="Third slide"
 
             />

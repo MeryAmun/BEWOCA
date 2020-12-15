@@ -1,5 +1,13 @@
 import React from 'react';
 import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
+import Image from "../images/b3.jpg"
+import Image1 from "../images/b5.jpg"
+import Image2 from "../images/d2.jpg"
+import Image3 from "../images/b1.jpg"
+import Image4 from "../images/d5.jpg"
+import Image5 from "../images/a2.jpg"
+import Image6 from "../images/a1.jpg"
+
 
 
 
@@ -31,7 +39,7 @@ const Education = () => {
                   <Carousel.Item interval={2000}>
                     <img
                       className="d-block w-100"
-                      src="/images/b3.jpg"
+                      src={Image}
                       alt="First slide"
                     />
                     <h3 className="title text-seconadry dispaly-3">Training in Mushroom production</h3>
@@ -41,7 +49,7 @@ const Education = () => {
                   <Carousel.Item interval={2000}>
                     <img
                       className="d-block w-100"
-                      src="/images/b5.jpg"
+                      src={Image1}
                       alt="First slide"
                     />
                     <h3 className="title text-seconadry dispaly-3">Training in Mushroom production</h3>
@@ -51,7 +59,7 @@ const Education = () => {
                   <Carousel.Item interval={2000}>
                     <img
                       className="d-block w-100"
-                      src="/images/d2.jpg"
+                      src={Image2}
                       alt="Third slide"
 
                     />
@@ -62,7 +70,7 @@ const Education = () => {
                   <Carousel.Item>
                     <img
                       className="d-block w-100 h-auto"
-                      src="/images/b1.jpg"
+                      src={Image3}
                       alt="Third slide"
                     />
                     <h3 className="title text-seconadry">Empower a woman, save a family</h3>
@@ -72,7 +80,7 @@ const Education = () => {
                   <Carousel.Item>
                     <img
                       className="d-block w-100 h-auto"
-                      src="/images/d5.jpg"
+                      src={Image4}
                       alt="Third slide"
                     />
                     <h3 className="title text-seconadry">Empower a woman, save a family</h3>
@@ -90,7 +98,7 @@ const Education = () => {
                 <div className="hov d-flex flex-wrap">
                   <img
                     className="d-block w-100"
-                    src="/images/a2.jpg"
+                    src={Image5}
                     alt="Third slide"
 
                   />
@@ -109,7 +117,7 @@ const Education = () => {
               <Card className="card border border-white">
                 <img
                   className="hov d-block w-100"
-                  src="/images/a1.jpg"
+                  src={Image6}
                   alt="Third slide"
 
                 />

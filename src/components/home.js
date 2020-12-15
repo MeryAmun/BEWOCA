@@ -1,5 +1,13 @@
 import React from 'react';
 import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
+import Image from "../images/d1.jpg"
+import Image1 from "../images/d2.jpg"
+import Image2 from "../images/d3.jpg"
+import Image3 from "../images/a6.jpg"
+import Image4 from "../images/a5.jpg"
+import Image5 from "../images/a4.jpg"
+import Image6 from "../images/a2.jpg"
+import Image7 from "../images/a1.jpg"
 
 
 
@@ -11,61 +19,71 @@ const Home = () => {
     <div>
       <Jumbotron fluid className=" display-3 bg-dark sm-display-5">
         <Nav.Item>
-          <Nav.Link href="/contact"> <h1 className="head">HELP SOMEONE INTERNALLY DISPLACED BY THE WAR IN ENGLISH CAMEROON</h1></Nav.Link>
+          <Nav.Link href="/contact"> <h1 className="head text-center p">HELP SOMEONE INTERNALLY DISPLACED <br/>BY THE WAR IN ENGLISH CAMEROON</h1></Nav.Link>
         </Nav.Item>
       </Jumbotron>
-
-      <Container className="fluid display-5-sm">
+      <Carousel className="fluid d-block w-100">
+      <Carousel.Item>
+        <Carousel.Caption>
+          <h1 className=" title font-weight-normal">Welcome to Better World Community And Advocacy Organization</h1>
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image}
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Carousel.Caption>
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image1}
+          alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Carousel.Caption>
+          
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image2}
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
+      <Container fluid className="display-5-sm">
         <Container className="fluid d-flex">
-          <Carousel className="d-block w-100">
-            <Carousel.Item>
-              <Carousel.Caption>
-                <h1 className=" title font-weight-normal">Welcome to Better World Community And Advocacy Organization</h1>
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/d1.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Carousel.Caption>
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/d2.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Carousel.Caption>
-                
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/d3.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
+          
         </Container>
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <main className="">
           <section className="d-flex">
             <div className="para">
-              <div>Welcome to Better World Community And Advocacy Organization (BEWOCA) official website.Here we belief that a little effort can make alot of difference in the life of an individual.We are A young NGO based in Bamenda, a city in the English Speaking part of Cameroon.
-    </div>
-              <Button className="font-weight-bold bg-dark"> <Nav.Item>
+              <div> 
+              <p className="note">Welcome to Better World Community And Advocacy 
+              Organization (BEWOCA) official website.Here we belief that a little effort can make alot
+               of difference in the life of an individual.We are A young NGO based in Bamenda, 
+               a city in the English Speaking part of Cameroon.</p>
+               <Button className="font-weight-bold bg-dark"> <Nav.Item>
                 <Nav.Link href="/about">Learn More</Nav.Link>
               </Nav.Item>
               </Button>
+    </div>
+              
               <br />
               <div className="caro">
-                <Carousel>
+                <Carousel className="w-100">
                   <Carousel.Item interval={500}>
                     <img
-                      className="d-block w-100"
-                      src="/images/a6.jpg"
+                      className="car d-block w-100"
+                      src={Image3}
                       alt="First slide"
                     />
                     <Carousel.Caption>
@@ -73,8 +91,8 @@ const Home = () => {
                   </Carousel.Item>
                   <Carousel.Item interval={500}>
                     <img
-                      className="d-block w-100"
-                      src="/images/a5.jpg"
+                      className="car d-block w-100"
+                      src={Image4}
                       alt="Third slide"
 
                     />
@@ -84,8 +102,8 @@ const Home = () => {
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100 h-auto"
-                      src="/images/a4.jpg"
+                      className="car d-block w-100 h-auto"
+                      src={Image5}
                       alt="Third slide"
                     />
                      <h3 className="title text-dark">Cross-section of Products.</h3>
@@ -95,14 +113,15 @@ const Home = () => {
                 </Carousel>
               </div>
             </div>
-
-
+            <br/>
+            <br/>
+            <br/>
             <aside className="float-right">
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary">
                 <div className="hov d-flex flex-wrap">
                   <img
                     className="d-block w-100"
-                    src="/images/a2.jpg"
+                    src={Image6}
                     alt="Third slide"
 
                   />
@@ -118,10 +137,10 @@ const Home = () => {
                   </Button>
                 </Card.Body>
               </Card>
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary">
                 <img
                   className="hov d-block w-100"
-                  src="/images/a1.jpg"
+                  src={Image7}
                   alt="Third slide"
 
                 />

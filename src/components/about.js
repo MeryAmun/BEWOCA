@@ -1,6 +1,15 @@
 import React from 'react';
 import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
 import './css/about.css'
+import Image from "../images/d3.jpg"
+import Image1 from "../images/a3.jpg"
+import Image2 from "../images/c3.jpg"
+import Image3 from "../images/c4.jpg"
+import Image4 from "../images/a3.jpg"
+import Image5 from "../images/c9.jpg"
+import Image6 from "../images/b4.jpg"
+
+
 
 
 
@@ -11,50 +20,51 @@ const About = () => {
     <div className="about">
       <Jumbotron fluid className=" display-3 bg-dark sm-display-5">
         <Nav.Item>
-          <Nav.Link href="/contact"> <h1 className="title">WE BUILD, REPAIR, AND INSPIRE HOPE</h1></Nav.Link>
+          <Nav.Link href="/contact"> <h1 className="title text-center">WE BUILD, REPAIR, AND INSPIRE HOPE</h1></Nav.Link>
         </Nav.Item>
       </Jumbotron>
+      <Carousel className="d-block w-100">
+      <Carousel.Item>
+        <Carousel.Caption>
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image}
+          alt="Third slide"
+        />
+        <h3 className="title text-center font-weight-bold text-dark lg display-5"> </h3>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Carousel.Caption>
 
+
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image1}
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
 
       <Container className="fluid d-flex">
-        <Carousel className="d-block w-100">
-          <Carousel.Item>
-            <Carousel.Caption>
-              <h1 className="title font-weight-normal text-dark "></h1>
-            </Carousel.Caption>
-            <img
-              className="d-block w-100"
-              src="/images/d3.jpg"
-              alt="Third slide"
-            />
-            <h3 className="title text-center font-weight-bold text-dark lg display-5"> </h3>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Carousel.Caption>
-
-
-            </Carousel.Caption>
-            <img
-              className="d-block w-100"
-              src="/images/a3.jpg"
-              alt="Third slide"
-            />
-          </Carousel.Item>
-        </Carousel>
+     
       </Container>
 
       <main className="main d-flex">
         <div className="section">
 
-          <div>Better World Community and Advocacy Organization is a community based organization out to identify and prevent all forms of abuse on men, women and children; irrespective of who they are. We are committed to make sure that Human rights are communicated and respected; that unwanted pregnancy is prevented through education campaigns, that teenage girls are given a chance to better their lives after giving birth through vocational training. We also want to ensure school dropouts and street kids can better their lives through education and carry out rehabilitation programs to reduce the rate of GBV ( Gender Based Violence) by engaging men and women in constructive dialogue, accountability and providing the information, tools, emotional and psychosocial  support needed to make the About, communities, society, nation and the world a better place for all.
-<br />
-We are funded by members and goodwill donors. We are independent of any political ideology, economic interest or religious ideology. No individual or government is beyond scrutiny. No situation is beyond hope.</div>
+          <div>
+          <p className="note">Better World Community and Advocacy Organization is a community based organization out to identify and prevent all forms of abuse on men, women and children; irrespective of who they are. We are committed to make sure that Human rights are communicated and respected; that unwanted pregnancy is prevented through education campaigns, that teenage girls are given a chance to better their lives after giving birth through vocational training. We also want to ensure school dropouts and street kids can better their lives through education and carry out rehabilitation programs to reduce the rate of GBV ( Gender Based Violence) by engaging men and women in constructive dialogue, accountability and providing the information, tools, emotional and psychosocial  support needed to make the About, communities, society, nation and the world a better place for all.
+          <br />
+          We are funded by members and goodwill donors. We are independent of any political ideology, economic interest or religious ideology. No individual or government is beyond scrutiny. No situation is beyond hope.</p>
+          </div>
 
           <Carousel className="caro">
             <Carousel.Item interval={2000}>
               <img
                 className="d-block w-100"
-                src="/images/c3.jpg"
+                src={Image2}
                 alt="Third slide"
               />
               <h3 className="title text-seconadry">Happy birthday Miss Akwi Takwe,<br />thank you for your endless sacrifice</h3>
@@ -65,7 +75,7 @@ We are funded by members and goodwill donors. We are independent of any politica
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/images/c4.jpg"
+                src={Image3}
                 alt="Third slide"
               />
               <h3 className="title text-center">The Founder and CEO <br />Miss Ngoin Nsama says welcome!!</h3>
@@ -79,16 +89,16 @@ We are funded by members and goodwill donors. We are independent of any politica
 
 
         <aside className="aside">
-          <Card className="card border border-white">
+          <Card className="card border border-white bg-secondary">
             <div className="d-flex flex-wrap">
               <img
                 className="hov d-block w-100"
-                src="/images/a3.jpg"
+                src={Image4}
                 alt="Third slide"
               />
               <img
                 className="hov d-block w-100"
-                src="/images/c9.jpg"
+                src={Image5}
                 alt="Third slide"
               />
             </div>
@@ -103,10 +113,10 @@ We are funded by members and goodwill donors. We are independent of any politica
               </Button>
             </Card.Body>
           </Card>
-          <Card className="card border border-white">
+          <Card className="card border border-white bg-secondary">
             <img
               className="hov d-block w-100"
-              src="/images/b4.jpg"
+              src={Image6}
               alt="Third slide"
 
             />

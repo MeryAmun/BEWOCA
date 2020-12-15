@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Nav, Button, Jumbotron, Col, Row, Form, InputGroup, Container } from 'react-bootstrap';
 
 
@@ -36,7 +35,7 @@ const MyForm = () => {
 
 
 
-        <Form className="text-dark" noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form action="" method="" className="text-dark" noValidate validated={validated} onSubmit={handleSubmit}>
           <fieldset>
             <Form.Group as={Row}>
               <Form.Label as="legend" column sm={2}>

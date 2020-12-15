@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Loader from './components/loader'
 import Icons from './components/icons'
 import About from './components/about';
@@ -15,6 +15,8 @@ import Education from './components/education'
 import Violence from './components/violence'
 import Nyeneba from './components/nyeneba'
 import MyForm from './components/form'
+import Bloglist from './blog/bloglist';
+import SingleBlog from './blog/singleBlog';
 
 require('bootstrap');
 
@@ -28,6 +30,7 @@ function App() {
         <Navigation />
         <Loader />
         <div className="content">
+        <Switch>
           <Route path='/' exact={true} component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
@@ -39,14 +42,20 @@ function App() {
           <Route path="/violence" component={Violence} />
           <Route path="/nyeneba" component={Nyeneba} />
           <Route path="/form" component={MyForm} />
+          <Route path="/bloglist" component={Bloglist} />
+          <Route path="/singleblog/:id" component={SingleBlog} />
+         { /*<Route path="/singleblog/:id" render= {props=> {
+            <SingleBlog {...props}  />
+          }} />*/}
 
+          </Switch>
 
         </div>
 
         <div className="footer justify-content-around d-flex flex-row">
           <div justify-content-around d-flex flex-column>
             <Icons />
-
+            <Nav.Link href="/bloglist">Blog</Nav.Link>
 
             <h4 className="tex">BEWOCA &copy;2020</h4>
           </div>

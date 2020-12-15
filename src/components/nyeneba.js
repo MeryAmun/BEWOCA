@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
 import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
 
 

@@ -1,5 +1,14 @@
 import React from 'react';
 import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
+import Image from "../images/c2.jpg"
+import Image1 from "../images/f2.jpg"
+import Image2 from "../images/g7.jpg"
+import Image3 from "../images/f1.jpg"
+import Image4 from "../images/g5.jpg"
+import Image6 from "../images/a2.jpg"
+import Image7 from "../images/a1.jpg"
+
+
 
 
 
@@ -10,45 +19,45 @@ const Partnerships = () => {
     <div>
       <Jumbotron fluid className=" display-3 bg-dark sm-display-5">
         <Nav.Item>
-          <Nav.Link href="link-1"> <h1 className="head">TOGETHER, WE CAN</h1></Nav.Link>
+          <Nav.Link href="link-1"> <h1 className="head text-center">TOGETHER, WE CAN</h1></Nav.Link>
         </Nav.Item>
       </Jumbotron>
+      <Carousel className="d-block w-100">
+      <Carousel.Item>
+        <Carousel.Caption>
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image}
+          height="800rem"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Carousel.Caption>
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image2}
+          height="800rem"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Carousel.Caption>
+        </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src={Image3}
+          height="800rem"
+          alt="Third slide"
+        />
+      </Carousel.Item>
 
+    </Carousel>
       <Container className="fluid display-5-sm">
         <Container className="fluid d-flex">
-          <Carousel className="d-block w-100">
-            <Carousel.Item>
-              <Carousel.Caption>
-              <h3 className="title text-seconadry dispaly-3"></h3>
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/c2.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Carousel.Caption>
-              <h3 className="title text-seconadry dispaly-3"></h3>
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/f3.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Carousel.Caption>
-              <h3 className="title text-seconadry dispaly-3"></h3>
-              </Carousel.Caption>
-              <img
-                className="d-block w-100"
-                src="/images/f1.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-
-          </Carousel>
+          
         </Container>
 
         <main className="">
@@ -63,7 +72,7 @@ const Partnerships = () => {
                   <Carousel.Item interval={2000}>
                     <img
                       className="d-block w-100"
-                      src="/images/F2.jpg"
+                      src={Image1}
                       alt="First slide"
                     />
                     <Nav.Item>
@@ -73,7 +82,7 @@ const Partnerships = () => {
                   <Carousel.Item interval={2000}>
                     <img
                       className="d-block w-100"
-                      src="/images/g5.jpg"
+                      src={Image4}
                       alt="Third slide"
 
                     />
@@ -83,17 +92,7 @@ const Partnerships = () => {
 The main objective of this project is to lower the infant mortality rate of the people of Nyeneba by providing access to adequate health care and drugs to the community of Nyeneba.</h3></Nav.Link>
                     </Nav.Item>
                   </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100 h-auto"
-                      src="/images/g2.jpg"
-                      alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                      <h3 className="title">deplorable.</h3>
-                      <p></p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
+                 
                 </Carousel>
               </div>
             </div>
@@ -101,11 +100,11 @@ The main objective of this project is to lower the infant mortality rate of the 
 
 
             <aside className="float-right">
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary">
                 <div className="hov d-flex flex-wrap">
                   <img
                     className="d-block w-100"
-                    src="/images/a2.jpg"
+                    src={Image6}
                     alt="Third slide"
 
                   />
@@ -121,10 +120,10 @@ The main objective of this project is to lower the infant mortality rate of the 
                   </Button>
                 </Card.Body>
               </Card>
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary">
                 <img
                   className="hov d-block w-100"
-                  src="/images/a1.jpg"
+                  src={Image7}
                   alt="Third slide"
 
                 />

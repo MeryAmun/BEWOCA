@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import {  Nav,Button,Jumbotron,Carousel, Card, Container } from 'react-bootstrap';
+import {  Nav,Button,Jumbotron, Card, Container } from 'react-bootstrap';
+import Image5 from "../images/a2.jpg"
+import Image6 from "../images/a1.jpg"
 
 
 
@@ -11,7 +13,7 @@ const Contact = () => {
         <div>
  <Jumbotron fluid className=" display-3 bg-dark sm-display-5">  
                 <Nav.Item>
-    <Nav.Link href="link-1"> <h1 className="head">THANKS FOR REACHING OUT</h1></Nav.Link>
+    <Nav.Link href="link-1"> <h1 className="head text-center">THANKS FOR REACHING OUT</h1></Nav.Link>
   </Nav.Item>
             </Jumbotron>
            
@@ -73,7 +75,7 @@ const Contact = () => {
 <div className="hov d-flex flex-wrap">
      <img
       className="d-block w-100"
-      src="/images/a2.jpg"
+      src={Image5}
       alt="Third slide"
      
     />
@@ -92,7 +94,7 @@ const Contact = () => {
 <Card  className="card border border-white">
  <img
       className="hov d-block w-100"
-      src="/images/a1.jpg"
+      src={Image6}
       alt="Third slide"
      
     />

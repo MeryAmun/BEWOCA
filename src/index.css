@@ -30,8 +30,27 @@ body {
   padding: 1.5rem 1.5rem;
 }
 
+.car{
+  height: 23rem;
+  width: auto;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note{
+  font-size: large;
+  
+}
+
 .para{
-    font-size: 1rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-weight: normal;
     padding: .5rem;
     font-family:'Helvetica Neue', sans-serif ;

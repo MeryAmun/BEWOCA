@@ -1,5 +1,9 @@
 import React from 'react';
-import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
+import { Nav, Button, Jumbotron, Card, Container } from 'react-bootstrap';
+import Image from "../images/a2.jpg"
+import Image1 from "../images/a1.jpg"
+import Image2 from "../images/g5.jpg"
+
 
 
 
@@ -10,7 +14,7 @@ const Emergency = () => {
     <div>
       <Jumbotron fluid className=" display-3 bg-dark sm-display-5">
         <Nav.Item>
-          <Nav.Link href="/donate"> <h1 className="head">A DISTRESS CALL</h1></Nav.Link>
+          <Nav.Link href="/donate"> <h1 className="head text-center">A DISTRESS CALL</h1></Nav.Link>
         </Nav.Item>
       </Jumbotron>
 
@@ -24,7 +28,7 @@ const Emergency = () => {
             <div className="hov d-flex flex-wrap">
               <img
                 className="d-block w-100"
-                src="/images/a2.jpg"
+                src={Image}
                 alt="Third slide"
 
               />
@@ -39,7 +43,7 @@ const Emergency = () => {
           <Card className="card border border-white">
             <img
               className="hov d-block w-100"
-              src="/images/a1.jpg"
+              src={Image1}
               alt="Third slide"
 
             />
@@ -58,7 +62,7 @@ const Emergency = () => {
           <Card className="card border border-white">
             <img
               className="hov d-block w-100"
-              src="/images/g5.jpg"
+              src={Image2}
               alt="Third slide"
 
             />
