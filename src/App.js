@@ -53,7 +53,7 @@ function App() {
         </div>
 
         <div className="footer justify-content-around d-flex flex-row">
-          <div justify-content-around d-flex flex-column>
+          <div justify-content-start d-flex flex-column>
             <Icons />
             <Nav.Link href="/bloglist">Blog</Nav.Link>
 

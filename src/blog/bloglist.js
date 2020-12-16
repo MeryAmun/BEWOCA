@@ -50,9 +50,10 @@ fetch('http://localhost:1337/blogs').then((response)=>{
                     <br/>
                     <div className="card border-secondary mb-3" key={blog.id}> 
                     <div className='card-header text-dark'>{blog.category}</div>
-                   <h3 className="card-title text-center bg-info">{blog.blogtitle}</h3>
+                   <h3 className="card-title text-center text-info">{blog.blogtitle}</h3>
                    <div className="card-body"> 
-                   <img width="100%" src={`http://localhost:1337${blog.featuredimage}` }alt={blog.blogtitle}/>
+                   <img width="200px" src={blog.featuredimage ? blog.featuredimage.url : ""} alt={blog.blogtitle}/>
+                   <br/>
                    <p>{blog.blogcontent}</p> 
                    </div>
                   <Link to={`/singleblog/${blog.id}`} className="btn btn-md text-center btn-success">Learn More</Link>

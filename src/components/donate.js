@@ -25,7 +25,7 @@ const Donate = () => {
           <Card className="card border border-white">
             <div className="d-flex flex-wrap">
               <img
-                className="d-block w-100"
+                className="car d-block w-100"
                 src={Image3}
                 height="1000rem"
                 alt="Third slide"
@@ -41,7 +41,7 @@ const Donate = () => {
           </Card>
           <Card className="card border border-white">
             <img
-              className="d-block w-100"
+              className="car d-block w-100"
               src={Image4}
               height="500rem"
               alt="Third slide"
@@ -57,7 +57,7 @@ const Donate = () => {
           </Card>
           <Card className="card border border-white">
             <img
-              className="d-block w-100"
+              className="car d-block w-100"
               src={Image7}
               height="800rem"
               alt="Third slide"
@@ -74,7 +74,7 @@ const Donate = () => {
           <Card className="card border border-white">
             <div className="d-flex flex-wrap">
               <img
-                className="d-block w-100"
+                className="car d-block w-100"
                 src={Image5}
                 height="500rem"
                 alt="Third slide"
@@ -91,7 +91,7 @@ const Donate = () => {
           </Card>
           <Card className="card border border-white">
             <img
-              className="d-block w-100"
+              className="car d-block w-100"
               src={Image6}
               alt="Third slide"
 

@@ -20,7 +20,7 @@ class SingleBlog extends Component {
     }
     return response.json();
 }).then((blog)=>{
-    console.log(blog)
+  
     this.setState({SingleBlog:blog})
     this.setState({BlogImage:blog.featuredimage.url})
 })
@@ -28,12 +28,12 @@ class SingleBlog extends Component {
     }
 
     render() {
-        console.log(this.props.match.params.id)
-        const {id,blogtitle,blogcontent,categories} = this.state.SingleBlog;
+        const {id,blogtitle,blogcontent,categoryname} = this.state.SingleBlog;
         return (
-            <div className='jumbotron'>
+            <div className='jumbotron' key={id}>
+            <div className=''>{categoryname}</div>
                <h1 className='display-8'>{blogtitle}</h1> 
-               <img width="100%" src={`[http://localhost:1337/${this.state.BlogImage}`} alt=''/>
+               <img width="200px" src={this.state.BlogImage} alt='blogImage'/>
                <p className='lead'>{blogcontent}</p>
             </div>
         )

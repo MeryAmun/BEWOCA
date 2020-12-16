@@ -46,8 +46,8 @@ const Violence = () => {
 
 
 
-            <aside className="float-right">
-              <Card className="card border border-white bg-secondary">
+            <div className="float-right">
+              <Card className="card border border-white bg-secondary text-white">
                 <div className="hov d-flex flex-wrap">
                   <img
                     className="d-block w-100"
@@ -67,7 +67,7 @@ const Violence = () => {
                   </Button>
                 </Card.Body>
               </Card>
-              <Card className="card border border-white bg-secondary">
+              <Card className="card border border-white bg-secondary text-white">
                 <img
                   className="hov d-block w-100"
                   src={Image3}
@@ -86,7 +86,7 @@ const Violence = () => {
                   </Button>
                 </Card.Body>
               </Card>
-            </aside>
+            </div>
           </section>
 
         </main>

@@ -100,7 +100,7 @@ The main objective of this project is to lower the infant mortality rate of the 
 
 
             <aside className="float-right">
-              <Card className="card border border-white bg-secondary">
+              <Card className="card border border-white bg-secondary text-white">
                 <div className="hov d-flex flex-wrap">
                   <img
                     className="d-block w-100"
@@ -120,7 +120,7 @@ The main objective of this project is to lower the infant mortality rate of the 
                   </Button>
                 </Card.Body>
               </Card>
-              <Card className="card border border-white bg-secondary">
+              <Card className="card border border-white bg-secondary text-white">
                 <img
                   className="hov d-block w-100"
                   src={Image7}

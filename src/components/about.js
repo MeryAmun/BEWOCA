@@ -89,7 +89,7 @@ const About = () => {
 
 
         <aside className="aside">
-          <Card className="card border border-white bg-secondary">
+          <Card className="card border border-white bg-secondary text-white">
             <div className="d-flex flex-wrap">
               <img
                 className="hov d-block w-100"
@@ -113,7 +113,7 @@ const About = () => {
               </Button>
             </Card.Body>
           </Card>
-          <Card className="card border border-white bg-secondary">
+          <Card className="card border border-white bg-secondary text-white">
             <img
               className="hov d-block w-100"
               src={Image6}

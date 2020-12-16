@@ -94,7 +94,7 @@ const Education = () => {
 
 
             <aside className="float-right">
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary text-white">
                 <div className="hov d-flex flex-wrap">
                   <img
                     className="d-block w-100"
@@ -114,7 +114,7 @@ const Education = () => {
                   </Button>
                 </Card.Body>
               </Card>
-              <Card className="card border border-white">
+              <Card className="card border border-white bg-secondary text-white">
                 <img
                   className="hov d-block w-100"
                   src={Image6}
