@@ -104,7 +104,7 @@ const Education = () => {
                   />
                 </div>
                 <Card.Body>
-                  <Card.Title><h3 className="font-weight-bold text-info">Empower a woman, save a family</h3></Card.Title>
+                  <Card.Title><h3 className="font-weight-bold text-white">Empower a woman, save a family</h3></Card.Title>
                   <Card.Text>
                     Sponsor an Internally displaced person to learn a trade or donate to our project aimed at training women and girls on how to make sandals and bags using beads.
     </Card.Text>
@@ -123,7 +123,7 @@ const Education = () => {
                 />
 
                 <Card.Body>
-                  <Card.Title><h3 className="font-weight-bold text-info">Emergency</h3></Card.Title>
+                  <Card.Title><h3 className="font-weight-bold text-white">Emergency</h3></Card.Title>
                   <Card.Text>
                     Women and children are the ones who bare the greatest brunts of war.A bloody civil war is raging in the Cameroons,the humanitarian crisis is overwhelming.Women and children have been targets in the recent weeks.
     </Card.Text>

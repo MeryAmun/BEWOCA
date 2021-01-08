@@ -51,7 +51,7 @@ const Donate = () => {
             <Card.Body>
               <Card.Title><h3 className="font-weight-bold text-info">Emergency</h3></Card.Title>
               <Card.Text>
-                You can sponsor and internally displaced person through leaning a trade...tailoring,hairdressing,shaving,Carpentary sandals making depending on your willingness.Wew believe that a little is alot.
+                You can sponsor and internally displaced person through learn a trade...tailoring,hairdressing,shaving,Carpentary sandals making depending on your willingness.We believe that a little is alot.
     </Card.Text>
             </Card.Body>
           </Card>
@@ -67,7 +67,7 @@ const Donate = () => {
             <Card.Body>
               <Card.Title><h3 className="font-weight-bold text-info">Emergency</h3></Card.Title>
               <Card.Text>
-                You can donnat drugs which could be given to internally displaced persons i the bushes for first aid treatment.
+                You can donnate drugs and other medical supplies which could be given to internally displaced persons in the bushes for first aid treatment.
     </Card.Text>
             </Card.Body>
           </Card>

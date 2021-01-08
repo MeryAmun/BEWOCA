@@ -1,5 +1,11 @@
 import React from 'react';
 import { Nav, Button, Jumbotron, Carousel, Card, Container } from 'react-bootstrap';
+import Image from "../images/g1.jpg"
+import Image1 from "../images/g5.jpg"
+import Image2 from "../images/g3.jpg"
+import Image6 from "../images/a2.jpg"
+import Image7 from "../images/a1.jpg"
+
 
 
 
@@ -23,7 +29,7 @@ const Nyeneba = () => {
                             </Carousel.Caption>
                             <img
                                 className="d-block w-100"
-                                src="/images/g5.jpg"
+                                src={Image1}
                                 alt="First slide"
                             />
                         </Carousel.Item>
@@ -33,7 +39,7 @@ const Nyeneba = () => {
                             </Carousel.Caption>
                             <img
                                 className="d-block w-100"
-                                src="/images/g3.jpg"
+                                src={Image2}
                                 alt="Third slide"
                             />
                         </Carousel.Item>
@@ -44,7 +50,7 @@ const Nyeneba = () => {
                             </Carousel.Caption>
                             <img
                                 className="d-block w-100"
-                                src="/images/g1.jpg"
+                                src={Image}
                                 alt="Third slide"
                             />
                         </Carousel.Item>
@@ -99,7 +105,7 @@ Call $ WhatsApp: +237653377110 </p>
                             <div className="hov d-flex flex-wrap">
                                 <img
                                     className="d-block w-100"
-                                    src="/images/a2.jpg"
+                                    src={Image6}
                                     alt="Third slide"
 
                                 />
@@ -118,7 +124,7 @@ Call $ WhatsApp: +237653377110 </p>
                         <Card className="card border border-white">
                             <img
                                 className="hov d-block w-100"
-                                src="/images/a1.jpg"
+                                src={Image7}
                                 alt="Third slide"
 
                             />

@@ -1,148 +1,122 @@
-import React from 'react';
-import { useState } from 'react'
-import { Nav, Button, Jumbotron, Col, Row, Form, InputGroup, Container } from 'react-bootstrap';
+import React, {Component} from 'react';
+import { Nav, Jumbotron } from 'react-bootstrap';
+import axios from 'axios';
 
 
 
-
-
-const MyForm = () => {
-  const [validated, setValidated] = useState(false);
-
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
     }
+  }
 
-    setValidated(true);
-  };
-  return (
-    <div>
-      <Jumbotron fluid className=" display-3 bg-dark sm-display-5">
-        <Nav.Item>
-          <Nav.Link href="link-1"> <h1 className="head">THANKS FOR REACHING OUT</h1></Nav.Link>
-        </Nav.Item>
+
+  onTitleChange(event) {
+    this.setState({title: event.target.value})
+  }
+
+  onNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  onEmailChange(event) {
+    this.setState({email: event.target.value})
+  }
+
+  onSubjectChange(event) {
+    this.setState({subject: event.target.value})
+  }
+  onMessageChange(event) {
+    this.setState({message: event.target.value})
+  }
+
+  async handleSubmit(e) {
+ e.preventDefault();
+ this.props.history.push('/success')
+
+
+ const {title, name, email, subject, message} = this.state
+
+ const form = await axios.post('/api/form', {
+
+  title,
+  name,
+  email,
+  subject,
+  message
+ })
+ //redirect
+ 
+  
+  }
+
+
+  render() {
+
+    return(
+      <div className="App">
+      <Jumbotron classNameName='fluid display-3 bg-dark sm-display-5'>
+        
+      <Nav.Item>
+        <Nav.Link href="link-1"> <h1 className="head">THANKS FOR REACHING OUT</h1></Nav.Link>
+      </Nav.Item>
       </Jumbotron>
 
-      <Container className="fluid display-5-sm">
-        <Jumbotron>
-          <h1 className="title text-bold text-info">CONTACT US FORM</h1>
-        </Jumbotron>
+      <div className='container'>
+           
+    
+        <br/>
+        <br/>
+        <br/>
+                <div className='jumbotron'>
+                <h1 className="title text-bold text-info">CONTACT US FORM</h1>
+              </div>
+              <p>If you have a general comment or question about BEWOCA please fill out the form below.</p>
 
-        <p>If you have a general comment or question about BEWOCA or this website please fill out the form below.</p>
+              
+    <div className='container w-50'>
+    <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}  action='/form' method="POST">
 
 
-
-        <Form action="" method="" className="text-dark" noValidate validated={validated} onSubmit={handleSubmit}>
-          <fieldset>
-            <Form.Group as={Row}>
-              <Form.Label as="legend" column sm={2}>
-                Radios
-      </Form.Label>
-              <Col sm={10}>
-                <Form.Check
-                  type="radio"
-                  label="General query"
-                  name="formHorizontalRadios"
-                  id="formHorizontalRadios1"
-                />
-                <Form.Check
-                  type="radio"
-                  label="Website feedback"
-                  name="formHorizontalRadios"
-                  id="formHorizontalRadios2"
-                />
-                <Form.Check
-                  type="radio"
-                  label="Working with BEWOCA"
-                  name="formHorizontalRadios"
-                  id="formHorizontalRadios3"
-                />
-                <Form.Check
-                  type="radio"
-                  label="Complaint"
-                  name="formHorizontalRadios"
-                  id="formHorizontalRadios3"
-                />
-                <Form.Check
-                  type="radio"
-                  label="Financial issues"
-                  name="formHorizontalRadios"
-                  id="formHorizontalRadios3"
-                />
-                <Form.Check
-                  type="radio"
-                  label="Other"
-                  name="formHorizontalRadios"
-                  id="formHorizontalRadios3"
-                />
-              </Col>
-            </Form.Group>
-          </fieldset>
-          <Col>
-            <Form.Group as={Col} md="4" controlId="validationCustomFirstName">
-              <Form.Label>First name</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="First name"
-                defaultValue=""
-              />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group as={Col} md="4" controlId="validationCustomLastName">
-              <Form.Label>Last name</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="Last name"
-                defaultValue=""
-              />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-            </Form.Group>
-
-            <Form.Group as={Col} md="4" controlId="validationCustomemail">
-              <Form.Label column sm={2}>
-                Email Adress
-    </Form.Label>
-              <InputGroup>
-                <InputGroup.Prepend>
-                  <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Col sm={10}>
-                  <Form.Control type="text"
-                    placeholder="email"
-                    aria-describedby="inputGroupPrepend"
-                    required />
-                </Col>
-                <Form.Control.Feedback type="invalid">
-                  Please add an email address.
-              </Form.Control.Feedback>
-              </InputGroup>
-            </Form.Group>
-
-            <Form.Group as={Col} md="6" controlId="validationCustomCountry">
-              <Form.Label>Country of residence</Form.Label>
-              <Form.Control type="text" placeholder="Country" required />
-              <Form.Control.Feedback type="invalid">
-                Please provide a valid country.
-            </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group controlId="validationCustomMessage">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} placeholder="message" required />
-            </Form.Group>
-          </Col>
-          <Button type="submit">Submit form</Button>
-        </Form>
-        <br />
-        <br />
-        <br />
-      </Container>
+    <div className='form-group'>
+        <label for="validationDefaultTitle">Title</label>
+        <input type="text" className="form-control" id="validationDefaultTitle" placeholder='e.g, Mrs' value={this.state.title} onChange={this.onTitleChange.bind(this)} required/>
+      </div>
+      <div className='form-group'>
+        <label for="validationDefaultName">Name</label>
+        <input type="text" className="form-control" id="validationDefaultName"  value={this.state.name} onChange={this.onNameChange.bind(this)} required/>
+      </div>
+      <div className="form-group">
+        <label for="validationDefaultEmail">Email Address</label>
+        <input type="email" className="form-control" id="validationDefaultEmail"  value={this.state.email} onChange={this.onEmailChange.bind(this)} required/>
+      </div>
+      <div className="form-group">
+        <label for="validationDefaultSubject">Subject</label>
+        <input type="text" className="form-control" id="validationDefaultSubject"  value={this.state.subject} onChange={this.onSubjectChange.bind(this)} required/>
+      </div>
+      <div className="form-group">
+      <label for="validationDefaultMessage">Message</label>
+      <textarea className="form-control" rows="5"   value={this.state.message} onChange={this.onMessageChange.bind(this)} required/>
     </div>
-  );
+    
+    <button className="btn btn-primary" type="submit">Submit form</button>
+  </form>
+        <br/>
+        <br/>
+        <br/>
+        </div>
+        </div>
+      </div>
+    );
+  }
+
+  
 }
 
-export default MyForm;
+export default App;

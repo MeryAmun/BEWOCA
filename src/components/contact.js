@@ -45,7 +45,7 @@ const Contact = () => {
           <h3 className="title font-weight-bold text-info"><i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 654292637 </h3>
           <h3 className="title font-weight-bold text-info"><i class="fa fa-envelope" aria-hidden="true"></i>bewocaa.org@gmail.com</h3>
           <p>For any other enquiries you can fill out our <Nav.Item>
-                    <Nav.Link href="/form">Contact form</Nav.Link>
+                    <Nav.Link href="/form" className="title font-weight-bold">Contact form</Nav.Link>
                   </Nav.Item></p>
                   <br/>
                   <br/>

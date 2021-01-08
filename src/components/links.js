@@ -51,7 +51,7 @@ const Navigation = () => {
           <Nav.Link href="/contact">CONTACT US</Nav.Link>
         </Nav.Item>
         <Nav.Item className="item">
-          <Nav.Link href="/bloglist">BLOG</Nav.Link>
+          <Nav.Link href="/blogpage">BLOG</Nav.Link>
         </Nav.Item>
         <Nav.Item className="">
           <Form inline className="search w-100">

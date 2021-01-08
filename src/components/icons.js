@@ -6,9 +6,10 @@ const Icons = () => {
     <div className="d-flex justify-content-between flex-row">
       <h3 className="tex text-info">Follow Us</h3>
       <div className="icons flex-column-sm ">
-        <Link to="https://web.facebook.com/Better-World-Community-And-Advocacy-Organisation-166805994242255">
+        <a target="_blank"  href="https://web.facebook.com/Better-World-Community-And-Advocacy-Organisation-166805994242255" rel="noopener noreferrer"
+        >
           <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-        </Link>
+        </a>
         <Link to="#">
           <i className="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
         </Link>

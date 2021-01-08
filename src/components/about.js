@@ -103,7 +103,7 @@ const About = () => {
               />
             </div>
             <Card.Body>
-              <Card.Title> <h3 className="title font-weight-bold text-info">Rape and Gender Based Violence</h3></Card.Title>
+              <Card.Title> <h3 className="title font-weight-bold text-white">Rape and Gender Based Violence</h3></Card.Title>
               <Card.Text>
                 Gender Based Violence and rape are two monsters that are ever present in our communities.We are committed to fight these ugly beasts in every way,by providing th neccesary support to victims.
     </Card.Text>
@@ -122,7 +122,7 @@ const About = () => {
             />
 
             <Card.Body>
-              <Card.Title><h3 className="title font-weight-bold text-info">Recognition</h3></Card.Title>
+              <Card.Title><h3 className="title font-weight-bold text-white">Recognition</h3></Card.Title>
               <Card.Text>
                 We are grateful to be recognized and appreciated for our little effort towards making life better.Without your donations,we would do nothing.To our donors,we say Thank you!!!
     </Card.Text>
