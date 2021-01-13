@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-fetch';
-import VideoListItems from './videoListItems';
+import VideoListItems from './videolistitems';
 import {Link} from 'react-router-dom'
 
 
@@ -48,7 +48,7 @@ fetch('http://localhost:1337/videos').then((response)=>{
         
                     <VideoListItems key={id} videoTitle={videoTitle} videoText={videoText} videoContent={videoContent}  postedOn={postedOn} categories={categories} authorName={authorName} authorPosition={authorPosition} authorImage={authorImage}/>
                     <br/>
-                    <Link to={`/singleblog/${id}`} className="btn btn-md text-center btn-dark">Learn More</Link>
+                    <Link to={`/singlevideo/${id}`} className="btn btn-md text-center btn-dark">Learn More</Link>
                    </div>
                    <br/>
                    <br/>

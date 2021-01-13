@@ -10,10 +10,15 @@ const Icons = () => {
         >
           <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
         </a>
-        <Link to="#">
+        
+        <a target="_blank"  href="https://www.instagram.com/betterworldcommunityand_advoca/" rel="noopener noreferrer"
+        >
           <i className="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-        </Link>
+          </a>
+       
         <Link to="#">
+
+
           <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
         </Link>
       </div>

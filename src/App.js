@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import { BrowserRouter, Route, div } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Loader from './components/loader'
 import Icons from './components/icons'
 import About from './components/about';
@@ -19,7 +19,9 @@ import BlogPage from './blog/blogpage';
 import SingleBlog from './blog/singleBlog';
 import Success from './components/success';
 import Error from './components/error';
-import BlogComment from './blog/blogComment';
+import SingleVideo from './blog/singlevideo';
+import BlogCommentForm from './blog/blogCommentForm';
+import CommentList from './blog/commentList';
 
 require('bootstrap');
 
@@ -51,7 +53,9 @@ function App() {
           <Route path="/error" component={Error} />
           <Route path="/blogpage" component={BlogPage} />
           <Route path="/singleblog/:id" component={SingleBlog} />
-          <Route path="/blogComment" component={BlogComment} />
+          <Route path="/singlevideo/:id" component={SingleVideo} />
+          <Route path="/commentList" component={CommentList} />
+          <Route path="/blogCommentForm" component={BlogCommentForm} />
           <Route path='/' exact={true} component={Home} />
           {/*<Route path="/single/:blogid" render= {props=> {
             <SingleBlog {...props}  />

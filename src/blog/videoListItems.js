@@ -2,10 +2,11 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {  Card} from 'react-bootstrap';
 import ReactPlayer from 'react-player';
+import Image from "../images/vid.mp4"
 
 
 
-const VideoListItems = ({id,videoTitle,videoContent, videoText, postedOn,  authorName, authorPosition, authorImage, categories}) => {
+const VideoListItems = ({id,videoTitle,videoContent, videoText, postedOn,  authorName, authorPosition, authorImage, categories, url}) => {
     const category = categories.map((category) =>{
         return category.categoryname
 
@@ -19,7 +20,7 @@ const VideoListItems = ({id,videoTitle,videoContent, videoText, postedOn,  autho
         <Card.Title> <h2 className="title font-weight-bold text-white bg-dark text-center ">{category}</h2></Card.Title>
        
         <video controls>
-        <source src= {videoContent ? videoContent.url : ""}
+        <source src= {Image}
         alt={videoTitle} type="video/mp4"></source>
     </video>
     

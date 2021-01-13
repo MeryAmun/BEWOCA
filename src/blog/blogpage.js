@@ -5,7 +5,7 @@ import VideoList from './videoList'
 
  const BlogPage = () => {
     return (
-        <div className='container'>
+        <div className='bloglist container'>
   <Bloglist />
    <VideoList />       
         </div>
